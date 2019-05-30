@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApplication1.Models
+namespace ProyectoCoches_MVC.Models
 {
     public class ErrorViewModel
     {

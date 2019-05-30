@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ProyectoCoches_DATA.Data.Entitys;
 using ProyectoCoches_DATA.Data.Repository;
-using WebApplication1.Models;
+using ProyectoCoches_MVC.Models;
 
-namespace WebApplication1.Controllers
+namespace ProyectoCoches_MVC.Controllers
 {
     public class HomeController : Controller
     {

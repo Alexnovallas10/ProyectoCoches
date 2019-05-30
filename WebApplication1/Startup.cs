@@ -12,7 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ProyectoCoches_DATA.Data.Context;
 using ProyectoCoches_DATA.Data.Repository;
 
-namespace WebApplication1
+namespace ProyectoCoches_MVC
 {
     public class Startup
     {
