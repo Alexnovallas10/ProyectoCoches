@@ -1,0 +1,1 @@
+﻿{"ContextClassName":"ProyectocochesContext","DefaultDacpacSchema":null,"IdReplace":false,"IncludeConnectionString":false,"OutputPath":"Context","ProjectRootNamespace":"ProyectoCoches_DATA","SelectedToBeGenerated":0,"Tables":["dbo.Coches","dbo.datosusuario","dbo.Usuarios"],"UseDatabaseNames":false,"UseFluentApiOnly":true,"UseHandleBars":false,"UseInflector":false}
