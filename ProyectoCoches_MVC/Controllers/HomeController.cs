@@ -30,7 +30,8 @@ namespace ProyectoCoches_MVC.Controllers
             return View();
         }
 
-        public IActionResult InsertarCoche(Coches coches) {
+        public IActionResult InsertarCoche(Coches coches)
+        {
 
             var items = _IRepository.Add<Coches>(coches);         
             return View(items);
