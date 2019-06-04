@@ -1,17 +1,48 @@
-﻿@{
-    ViewData["Title"] = "Contact";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+﻿@model ProyectoCoches_DATA.Data.Entitys.Coches
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<h2>Subir Coche</h2>
+
+
+<table style="padding:20px; width:10%">
+    <tr style="padding:50px">
+        <th>Marca</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Marca)</th>
+        <th>Traccion</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Tracccion)</th>
+    </tr>
+    <tr>
+        <th>Modelo</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Modelo)</th>
+        <th>Itv</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Itv)</th>
+    </tr>
+    <tr>
+        <th>Color</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Color)</th>
+        <th>Precio</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Precio)</th>
+    </tr>
+    <tr>
+        <th>Año</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Año)</th>
+        <th>Descripcion</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Descrpcion)</th>
+    </tr>
+    <tr>
+        <th>Kilometros</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Km)</th>
+        <th>Imagen</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Imagen)</th>
+    </tr>
+    <tr>
+        <th>Combustible</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Combustible)</th>
+    </tr>
+</table>
+
+<div>
+    <div>
+        <input type="submit" class="btn btn-default" value="Subir" />
+    </div>
+</div>

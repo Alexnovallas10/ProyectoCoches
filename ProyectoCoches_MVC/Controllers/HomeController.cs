@@ -27,15 +27,23 @@ namespace ProyectoCoches_MVC.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
+        }
+
+        public IActionResult InsertarCoche(Coches coches) {
+
+            var items = _IRepository.Add<Coches>(coches);         
+            return View(items);
+        }
+
+        public IActionResult InsertarDatosUsuario(Datosusuario datosusuario) {
+
+            var items = _IRepository.Add<Datosusuario>(datosusuario);
+            return View(items);
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
 

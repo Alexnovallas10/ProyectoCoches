@@ -29,5 +29,7 @@ namespace ProyectoCoches_DATA.Data.Entitys
 
         [InverseProperty("IdNavigation")]
         public Coches Coches { get; set; }
+
+
     }
 }

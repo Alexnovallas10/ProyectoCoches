@@ -19,6 +19,7 @@ namespace ProyectoCoches_DATA.Data.Context
         public virtual DbSet<Datosusuario> Datosusuario { get; set; }
         public virtual DbSet<Usuarios> Usuarios { get; set; }
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -145,8 +146,56 @@ namespace ProyectoCoches_DATA.Data.Context
                     .HasMaxLength(10);
             });
 
+            //modelBuilder.Entity<DatosUsuarioCompletos>(entity =>
+            //{
+            //    entity.Property(e => e.Id).HasColumnName("id");
+
+            //    entity.Property(e => e.Contraseña)
+            //        .IsRequired()
+            //        .HasColumnName("contraseña")
+            //        .HasMaxLength(10);
+
+            //    entity.Property(e => e.Usuario)
+            //        .IsRequired()
+            //        .HasColumnName("usuario")
+            //        .HasMaxLength(10);
+
+            //    entity.Property(e => e.Id)
+            //        .HasColumnName("id")
+            //        .ValueGeneratedNever();
+
+            //    entity.Property(e => e.Apellido1)
+            //        .IsRequired()
+            //        .HasColumnName("apellido1")
+            //        .HasMaxLength(25)
+            //        .IsUnicode(false);
+
+            //    entity.Property(e => e.Apellido2)
+            //        .IsRequired()
+            //        .HasColumnName("apellido2")
+            //        .HasMaxLength(25)
+            //        .IsUnicode(false);
+
+            //    entity.Property(e => e.Email)
+            //        .IsRequired()
+            //        .HasColumnName("email")
+            //        .HasMaxLength(25)
+            //        .IsUnicode(false);
+
+            //    entity.Property(e => e.Nombre)
+            //        .IsRequired()
+            //        .HasColumnName("nombre")
+            //        .HasMaxLength(25)
+            //        .IsUnicode(false);
+
+            //    entity.Property(e => e.Telefono)
+            //        .HasColumnName("telefono")
+            //        .HasColumnType("numeric(9, 0)");
+            //});
+
             OnModelCreatingPartial(modelBuilder);
         }
+
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }

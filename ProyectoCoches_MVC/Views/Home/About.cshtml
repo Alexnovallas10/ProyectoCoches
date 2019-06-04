@@ -1,7 +1,47 @@
-﻿@{
-    ViewData["Title"] = "About";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+﻿@model ProyectoCoches_DATA.Data.Entitys.Datosusuario
 
-<p>Use this area to provide additional information.</p>
+
+<h2>Registrarse</h2>
+
+
+@Html.AntiForgeryToken()
+<h4>Cree una cuenta nueva.</h4>
+
+<table style="padding:20px; width:10%">
+    <tr style="padding:50px">
+        <th>Nombre</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Nombre)</th>
+    </tr>
+    <tr>
+        <th>Apellido1</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Apellido1)</th>
+    </tr>
+    <tr>
+        <th>Apellido2</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Apellido2)</th>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Email)</th>
+    </tr>
+    <tr>
+        <th>Telefono</th>
+        <th style="padding:15px">@Html.TextBoxFor(m => m.Telefono)</th>
+    </tr>
+    @*<tr>
+        <th>Usuario</th>
+        <th style="padding:15px">@Html.TextBox("Nombre", Model.Usuarios.Usuario)</th>
+    </tr>
+    <tr>
+        <th>Contraseña</th>
+        <th style="padding:15px">@Html.TextBox("Nombre", Model.Usuarios.Contraseña)</th>
+    </tr>*@
+</table>
+
+<div>
+    <div>
+      <input type="submit"  class="btn btn-default" value="Registrarse" />
+    </div>
+</div>
+
+
